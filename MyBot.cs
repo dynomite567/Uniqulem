@@ -172,7 +172,7 @@ namespace Uniqulem
                 var channel = e.Server.FindChannels("general").FirstOrDefault();
                 var user = e.User;
 
-                await channel.SendMessage(string.Format("{0} has left the server! Godbye we will miss you...not! :smile:", user.Name));
+                await channel.SendMessage(string.Format("{0} has left the server! Godbye we will miss you! :smile:", user.Name));
             };
 
 
