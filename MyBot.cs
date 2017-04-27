@@ -178,7 +178,7 @@ namespace Uniqulem
 
             discord.ExecuteAndWait(async () =>
             {
-                await discord.Connect("Mjg5MDU4MzMwMDI5MzI2MzQ3.C6HDVQ.oTi3f_eAYbAUcDuEH_pIWDVIF_w", TokenType.Bot);
+                await discord.Connect("INSERT TOKEN HERE", TokenType.Bot);
             });
         }
 
