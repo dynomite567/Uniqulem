@@ -16,6 +16,9 @@ Want to put the bot on your server? If so, that sounds great and awesome! To add
 | .cat | Post's a random cat photo |
 | .dog | Post's a random dog photo |
 | .roll | Roll's a random number (1-50) |
+| .meme | Post's a random meme |
+| .clear | Clear's chat **ONLY CLEARS 100 MESSAGES AT A TIME!** |
+| .hello | Make the bot say hi |
 | .info | Tells you all about the bot |
 | .help | List's all the commands |
 
