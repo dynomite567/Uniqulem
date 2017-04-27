@@ -28,5 +28,10 @@ Want to put the bot on your server? If so, that sounds great and awesome! To add
 # Contribute to the Project
 This bot has a long ways to go, but a way that you can help is by contributing to this project. Whether its adding a new feature or rewriting the bot in a new coding language, you help out a whole lot to making this a really great and useful bot. All you have to do to contribute is to propose your files here!
 
+# Donate
+If you like the bot, and want to keep it running or let it have new features, a donation can help alot.
+
+BTC Donation address: 1HcFb6k7oB28gNUwmNe3XwFn4zwE3U3FnD
+
 # Trello
 I have made a trello for the bot! This is for sugesting new features, seeing what I am working on, and way more in the future! **[Click here to join!](https://trello.com/b/Bh6Bl6FT/uniqulem)**
