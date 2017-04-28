@@ -12,6 +12,7 @@ Want to put the bot on your server? If so, that sounds great and awesome! To add
 
 *Note: Don't uncheck any boxes! If you do, you might miss out on future updates the bot has!*
 
+**[Changelog](https://github.com/dynomite567/Uniqulem/releases)**
 
 # Commands (so far)
 | Command | Description |
