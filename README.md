@@ -3,6 +3,7 @@
 
 Uniqulem is a discord bot that is created to help you with your needs. The bot is coded from the Discord API and its pretty simple for now. The first version was just coded in just one day and its very stable.
 
+Uniqulem also has its own discord server: **[Join the server here](https://discord.gg/m4q24gX)**
 
 # Install
 Want to put the bot on your server? If so, that sounds great and awesome! To add the bot to your discord server, make sure you have manage server or administrator privileges to add it.
@@ -34,4 +35,3 @@ This bot has a long ways to go, but a way that you can help is by contributing t
 If you like the bot, and want to keep it running or let it have new features, a donation can help alot.
 
 BTC Donation address: 1HcFb6k7oB28gNUwmNe3XwFn4zwE3U3FnD
-
