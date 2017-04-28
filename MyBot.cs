@@ -263,9 +263,9 @@ namespace Uniqulem
             commands.CreateCommand("info")
                     .Do(async (e) =>
                     {
-                        await e.Channel.SendMessage("I was made by @DynomiteCentral#4808 by hand (minus my API) to serve this and many more servers! Currently I am under development but when I grow stronger and get more commands, I will be able to be on your server :D!");
-                        await e.Channel.SendMessage("If you want a changelog, help devolop the bot, or get support, you can join the official Uniqulem server here: https://discord.gg/JFNYKUp");
-                        await e.Channel.SendMessage("```Current Version: v0.1.3" +
+                        await e.Channel.SendMessage("I was made by @DynomiteCentral#4808 by hand to serve this and many more servers!");
+                        await e.Channel.SendMessage("If you want a changelog, help devolop the bot, or even add the bot to your server, come to the official github site here: https://dynomite567.github.io/Uniqulem/");
+                        await e.Channel.SendMessage("```Current Version: v1.0.0" +
                                                     "```");
                     });
         }
