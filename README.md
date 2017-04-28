@@ -15,16 +15,14 @@ Want to put the bot on your server? If so, that sounds great and awesome! To add
 **[Changelog](https://github.com/dynomite567/Uniqulem/releases)**
 
 # Commands (so far)
-| Command | Description |
-| :------------- | :------------- |
-| .cat | Post's a random cat photo |
-| .dog | Post's a random dog photo |
-| .roll | Roll's a random number (1-50) |
-| .meme | Post's a random meme |
-| .clear | Clear's the chat (**ONLY CLEARS 100 MESSAGES AT A TIME!**) |
-| .hello | Makes the bot say hi |
-| .info | Tells you all about the bot |
-| .help | List's all the commands |
+.cat - Post's a random cat photo
+.dog - Post's a random dog photo
+.roll - Roll's a random number (1-50)
+.meme - Post's a random meme
+.clear  Clear's the chat (**ONLY CLEARS 100 MESSAGES AT A TIME!**)
+.hello - Makes the bot say hi
+.info - Tells you all about the bot 
+.help - List's all the commands
 
 # Trello
 I have made a trello for the bot! This is for seeing what I am working on currently but I mught add more in the future! **[Click here to join!](https://trello.com/b/Bh6Bl6FT/uniqulem)**
