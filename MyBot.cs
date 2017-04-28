@@ -265,7 +265,7 @@ namespace Uniqulem
                     {
                         await e.Channel.SendMessage("I was made by @DynomiteCentral#4808 by hand to serve this and many more servers!");
                         await e.Channel.SendMessage("If you want a changelog, help devolop the bot, or even add the bot to your server, come to the official github site here: https://dynomite567.github.io/Uniqulem/");
-                        await e.Channel.SendMessage("```Current Version: v1.0.0" +
+                        await e.Channel.SendMessage("```Current Version: v1.0.2" +
                                                     "```");
                     });
         }
