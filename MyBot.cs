@@ -1,4 +1,4 @@
-﻿using Discord;
+using Discord;
 using Discord.Commands;
 
 using System;
@@ -153,6 +153,7 @@ namespace Uniqulem
             RegisterMemeCommand();
             RegisterHelloCommand();
             RegisterInfoCommand();
+            RegisterServerCommand();
             RegisterCatCommand();
             RegisterDogCommand();
             RegisterRollCommand();
@@ -172,7 +173,7 @@ namespace Uniqulem
                 var channel = e.Server.FindChannels("general").FirstOrDefault();
                 var user = e.User;
 
-                await channel.SendMessage(string.Format("{0} has left the server! Godbye we will miss you! :smile:", user.Name));
+                await channel.SendMessage(string.Format("{0} has left the server! Godbye we will miss you!", user.Name));
             };
 
 
@@ -195,6 +196,17 @@ namespace Uniqulem
                     });
         }
 
+        private void RegisterServerCommand()
+        {
+            commands.CreateCommand("server")
+                    .Do(async (e) =>
+                    {
+                        await e.Channel.SendMessage("Join the official Uniqulem server here for updates and support: https://discord.gg/m4q24gX");
+;
+
+                    });
+        }
+        
         private void RegisterDogCommand()
         {
             commands.CreateCommand("dog")
@@ -276,7 +288,7 @@ namespace Uniqulem
                     .Do(async (e) =>
                     {
                         await e.Channel.SendMessage("Commands:");
-                        await e.Channel.SendMessage(".info .hello .dog .meme .cat .roll .clear .help");
+                        await e.Channel.SendMessage(".info .hello .dog .meme .cat .roll .clear .help .server");
 
                     });
         }
