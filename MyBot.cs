@@ -202,11 +202,9 @@ namespace Uniqulem
                     .Do(async (e) =>
                     {
                         await e.Channel.SendMessage("Join the official Uniqulem server here for updates and support: https://discord.gg/m4q24gX");
-;
-
                     });
         }
-        
+
         private void RegisterDogCommand()
         {
             commands.CreateCommand("dog")
