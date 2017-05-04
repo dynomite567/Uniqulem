@@ -8,7 +8,9 @@ Uniqulem also has its own discord server: **[Join the server here](https://disco
 **[Changelog](https://github.com/dynomite567/Uniqulem/releases)**
 
 **Uniqulem uses***
+
 Node.js
+
 Discord.js
 
 # Install
@@ -17,7 +19,7 @@ Want to put the bot on your server? If so, that sounds great and awesome! To add
 **[Click here to add Uniqulem to your server!](https://discordapp.com/api/oauth2/authorize?client_id=307209446763921423&scope=bot&permissions=66321471)**
 
 *Note: Don't uncheck any boxes! If you do, you might miss out on future updates the bot has!*
-  
+
 # Commands (so far)
 .cat - Post's a random cat photo
 
