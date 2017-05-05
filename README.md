@@ -5,6 +5,8 @@ Uniqulem is a discord bot that is created to help you with your needs. The bot i
 
 Uniqulem also has its own discord server: **[Join the server here](https://discord.gg/m4q24gX)**
 
+**Current Version: 1.1.1b**
+
 **[Changelog](https://github.com/dynomite567/Uniqulem/releases)**
 
 **Uniqulem uses***
