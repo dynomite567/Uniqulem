@@ -47,7 +47,7 @@ client.on('message', message => {
 
   if (commandIs ("help", message)) {
     message.channel.sendMessage('Commands:');
-    message.channel.sendMessage('.help .hello .server .info .clear')
+    message.channel.sendMessage('``.help .hello .server .info .clear``')
   }
 
   if (commandIs ("hello", message)) {
