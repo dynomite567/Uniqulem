@@ -57,7 +57,7 @@ client.on('message', message => {
   if (commandIs ("info", message)) {
     message.channel.sendMessage('I was made by @DynomiteCentral#4808 by hand to serve this and many more servers!');
     message.channel.sendMessage('If you want a changelog, help devolop the bot, or even add the bot to your server, come to the official github site here: https://dynomite567.github.io/Uniqulem/');
-    message.channel.sendMessage('```Current Version: v1.1.1```');
+    message.channel.sendMessage('```Current Version: v1.1.1b```');
   }
 
 });
