@@ -23,17 +23,10 @@ Want to put the bot on your server? If so, that sounds great and awesome! To add
 *Note: Don't uncheck any boxes! If you do, you might miss out on future updates the bot has!*
 
 # Commands (so far)
-;cat - Post's a random cat photo
-
-;dog - Post's a random dog photo
-
-;roll - Roll's a random number (1-50)
-
-;meme - Post's a random meme
 
 ;clear - Clear's the chat
 
-;say - Makes the bot say a message
+;server - Get a invite to the Uniqulem server
 
 ;hello - Makes the bot say hi
 
@@ -50,4 +43,4 @@ This bot has a long ways to go, but a way that you can help is by contributing t
 # Donate
 If you like the bot, and want to keep it running or let it have new features, a donation can help alot.
 
-BTC Donation address: 1HcFb6k7oB28gNUwmNe3XwFn4zwE3U3FnD
+Paypal link: (Generating)
