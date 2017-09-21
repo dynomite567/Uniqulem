@@ -5,6 +5,10 @@ function commandIs(str, msg){
   return msg.content.toLowerCase().startsWith(";" + str);
 }
 
+function sum(x,y){
+      console.log(x+y);
+}
+
 function pluck(array) {
   return array.map(function(item) { return item["name"]; });
 }
@@ -18,7 +22,7 @@ function hasRole(mem, role) {
 }
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.username}!`);
-  client.user.setGame("Commands ;help");
+  client.user.setPresence({game:{name:bot.guilds.array().length+" servers | {help"}});
 });
 
 client.on('message', message => {
@@ -34,7 +38,7 @@ client.on('message', message => {
         } else {
           msg=parseInt(args[1]);
         }
-        message.channel.fetchMessages({limit: msg}).then(messages => message.channel.bulkDelete(messages)).catch(console.error);
+        message.channel.fetchMessages({limit: msg}).then(messages => message.channel.bulkDelete(sum(1,messages))).catch(console.error);
       }
     } else {
       message.channel.sendMessage("You are not a **BotMod** or **BotAdmin**");
@@ -70,7 +74,7 @@ client.on('message', message => {
   if (commandIs ("info", message)) {
     message.channel.sendMessage('I was made by @DynomiteCentral#4808 by hand to serve this and many more servers!');
     message.channel.sendMessage('If you want a changelog, help devolop the bot, or even add the bot to your server, come to the official github site here: https://dynomite567.github.io/Uniqulem/');
-    message.channel.sendMessage('```Current Version: v1.1.3```');
+    message.channel.sendMessage('```Current Version: v1.1.2```');
   }
 
 });
