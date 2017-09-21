@@ -22,7 +22,7 @@ function hasRole(mem, role) {
 }
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.username}!`);
-  client.user.setPresence({game:{name:bot.guilds.array().length+" servers | {help"}});
+  client.user.setGame(`;help | On ${client.guilds.size} guilds!`);
 });
 
 client.on('message', message => {
