@@ -43,4 +43,4 @@ This bot has a long ways to go, but a way that you can help is by contributing t
 # Donate
 If you like the bot, and want to keep it running or let it have new features, a donation can help alot.
 
-Paypal link: (Generating)
+Paypal link: [paypal.me/transfer54294](https://paypal.me/transfer54294)
