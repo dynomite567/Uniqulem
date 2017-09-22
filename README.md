@@ -9,7 +9,7 @@ Uniqulem also has its own discord server: **[Join the server here](https://disco
 
 **[Changelog](https://github.com/dynomite567/Uniqulem/releases)**
 
-**Uniqulem uses***
+**Uniqulem uses**
 
 Node.js
 
@@ -34,8 +34,11 @@ Want to put the bot on your server? If so, that sounds great and awesome! To add
 
 ;help - List's all the commands  
 
+# Stats
+Here are the bot's current stats. They are live and can be accessed [here.](https://p.datadoghq.com/sb/8dda7a260-909542ed0d)
+
 # Trello
-I have made a trello for the bot! This is for seeing what I am working on currently but I mught add more in the future! **[Click here to join!](https://trello.com/b/Bh6Bl6FT/uniqulem)**
+I have made a trello for the bot! This is for seeing what I am working on currently but I might add more in the future! **[Click here to join!](https://trello.com/b/Bh6Bl6FT/uniqulem)**
 
 # Contribute to the Project
 This bot has a long ways to go, but a way that you can help is by contributing to this project. Whether its adding a new feature or rewriting the bot in a new coding language, you help out a whole lot to making this a really great and useful bot. All you have to do to contribute is to propose your files here!
