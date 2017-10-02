@@ -35,7 +35,7 @@ Want to put the bot on your server? If so, that sounds great and awesome! To add
 ;help - List's all the commands  
 
 # Stats
-Here are the bot's current stats. They are live and can be accessed [here.](https://p.datadoghq.com/sb/8dda7a260-909542ed0d)
+Here are the bot's current stats. They are live and can be accessed in [here.](https://p.datadoghq.com/sb/8dda7a260-909542ed0d)
 
 # Trello
 I have made a trello for the bot! This is for seeing what I am working on currently but I might add more in the future! **[Click here to join!](https://trello.com/b/Bh6Bl6FT/uniqulem)**
@@ -46,4 +46,4 @@ This bot has a long ways to go, but a way that you can help is by contributing t
 # Donate
 If you like the bot, and want to keep it running or let it have new features, a donation can help alot.
 
-Paypal link: [paypal.me/transfer54294](https://paypal.me/transfer54294)
+Patreon link: [patreon.com/uniqulem](https://www.patreon.com/uniqulem)
