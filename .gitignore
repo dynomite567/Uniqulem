@@ -1,12 +1,3 @@
+/core/config.json
 
-Uniqulem.sln
-
-Uniqulem.userprefs
-
-MyBot (USE THIS).cs
-
-Uniqulem.csproj
-
-bin
-
-obj
+node_modules

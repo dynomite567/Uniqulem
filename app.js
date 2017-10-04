@@ -1,102 +1,70 @@
 const Discord = require("discord.js");
 const fs = require("fs");
+const Raven = require('raven');
 const superagent = require("superagent");
 const nodeschedule = require("node-schedule");
-const config = require("./config.json");
+const http = require('http');
+const express = require('express');
+const moment = require('moment');
+const chalk = require('chalk');
+const config = require('./core/config.json');
 const client = new Discord.Client();
-
+require('./core/util/eventLoader')(client);
 
 var accounts = JSON.parse(fs.readFileSync("./accounts.json", "utf8"));
 var daily = JSON.parse(fs.readFileSync("./daily.json", "utf8"));
-var owner = "190210389496037376";
-
-function commandIs(str, msg){
-  return msg.content.toLowerCase().startsWith("{" + str);
-}
 
 function sum(x,y){
       console.log(x+y);
 }
 
-function pluck(array) {
-  return array.map(function(item) { return item["name"]; });
-}
+const log = message => {
+  console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] ${message}`);
+};
 
-function hasRole(mem, role) {
-  if (pluck(mem.roles).includes(role)) {
-    return true;
-  } else {
-    return false;
-  }
-}
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.username}!`);
-  client.user.setGame(`;help | On ${client.guilds.size} guilds!`);
-  superagent.post('https://bots.discordlist.net/api')
-  .type('form')
-  .send({'token': token})
-  .send({'servers': client.guilds.size})
-  .end(function(err, res) {
-  if (err) {
-    console.log(err)
-  } else {
-    console.log('Updated Guild Count on discordlist.net!')
-  }
-})
+client.commands = new Discord.Collection();
+client.aliases = new Discord.Collection();
+fs.readdir('./core/commands/', (err, files) => {
+  if (err) console.error(err);
+  log(`Loading a total of ${files.length} commands.`);
+  files.forEach(f => {
+    let props = require(`./core/commands/${f}`);
+    log(`Loading Command: ${props.help.name}`);
+    client.commands.set(props.help.name, props);
+    props.conf.aliases.forEach(alias => {
+      client.aliases.set(alias, props.help.name);
+    });
+  });
 });
 
-client.on('message', message => {
-  var args = message.content.split(/[ ]+/);
-  var account = accounts.find(function(item) {
-    return item.user === message.author.id;
-});
-
-  if (commandIs ("clear", message)){
-    message.delete(1);
-    if (hasRole(message.member, "BotMod") || hasRole(message.member, "BotAdmin")) {
-      if (args.length >= 3) {
-          message.channel.send(new Discord.RichEmbed().setTitle("Error").setAuthor(message.author.username, message.author.avatarURL).setColor("#ff252a").setDescription("Number of messages are not defined or the number is too large! Usage: ``;clear (Number of messages to delete)``"));
-      } else {
-        var msg;
-        if (args.length === 1){
-          msg = 2;
-        } else {
-          msg=parseInt(args[1]);
-        }
-        message.channel.fetchMessages({limit: msg}).then(messages => message.channel.bulkDelete(messages)).catch(console.error);
-      }
-    } else {
-      message.channel.send(new Discord.RichEmbed().setTitle("Permision Denied").setAuthor(message.author.username, message.author.avatarURL).setColor("#ff252a").setDescription("You are not a **BotMod** or **BotAdmin**"));
+client.reload = command => {
+  return new Promise((resolve, reject) => {
+    try {
+      delete require.cache[require.resolve(`./core/commands/${command}`)];
+      let cmd = require(`./core/commands/${command}`);
+      client.commands.delete(command);
+      client.aliases.forEach((cmd, alias) => {
+        if (cmd === command) client.aliases.delete(alias);
+      });
+      client.commands.set(command, cmd);
+      cmd.conf.aliases.forEach(alias => {
+        client.aliases.set(alias, cmd.help.name);
+      });
+      resolve();
+    } catch (e){
+      reject(e);
     }
-  }
+  });
+};
 
-  if (commandIs ("say", message)){
-    message.delete(1);
-    if (hasRole(message.member, "BotMod") || hasRole(message.member, "BotAdmin")) {
-      if(args.length === 1){
-        message.channel.send(new Discord.RichEmbed().setTitle("Error").setAuthor(message.author.username, message.author.avatarURL).setColor("#ff252a").setDescription("I need something to say! Usage: ``;say (message)``"));
-      } else {
-        message.channel.send(args.join(" ").substring(5));
-      }
-    } else {
-      message.channel.send(new Discord.RichEmbed().setTitle("Permision Denied").setAuthor(message.author.username, message.author.avatarURL).setColor("#ff252a").setDescription("You are not a **BotMod** or **BotAdmin**"));
-    }
-  }
+client.elevation = message => {
+  let permlvl = 0;
+  let mod_role = message.guild.roles.find('name', config.modrolename);
+  if (mod_role && message.member.roles.has(mod_role.id)) permlvl = 2;
+  let admin_role = message.guild.roles.find('name', config.adminrolename);
+  if (admin_role && message.member.roles.has(admin_role.id)) permlvl = 3;
+  if (message.author.id === config.ownerid) permlvl = 4;
+  return permlvl;
+};
 
-  if (commandIs ("server", message)) {
-    message.delete(1);
-    message.channel.send(new Discord.RichEmbed().setTitle("Support Server").setAuthor(message.author.username, message.author.avatarURL).setColor("#BB00FF").setDescription("Join the official Uniqulem server here for updates and support: https://discord.gg/m4q24gX"));
-}
-  if (commandIs ("help", message)) {
-    message.delete(1);
-    message.channel.send(new Discord.RichEmbed().setTitle("Help").setAuthor(message.author.username, message.author.avatarURL).setColor("#BB00FF").setDescription("Here are the commands. More info about these commands can be found by clicking help above.").setFooter("Created by DynomiteCentral", "http://i.imgur.com/Qo6BP2v.png").setThumbnail("http://i.imgur.com/Qo6BP2v.png").setTimestamp().setURL("https://dynomite567.github.io/Uniqulem/").addField("Admin / Mod","``;say (message)`` ``;clear (number)``").addField("Info","``;info`` ``;hello`` ``;server`` ``;help``"));
-  }
-
-  if (commandIs ("info", message)) {
-    message.delete(1);
-    message.channel.send(new Discord.RichEmbed().setTitle("Info").setAuthor(message.author.username, message.author.avatarURL).setColor("#BB00FF").setDescription("I was made by @DynomiteCentral#4808 by hand to serve this and many more servers!\nIf you want a changelog, help devolop the bot, or even add the bot to your server, come to the official github site here: https://dynomite567.github.io/Uniqulem/\n```Current Version: v1.1.4b```").setThumbnail("http://i.imgur.com/Qo6BP2v.png"));
-  }
-
-});
-
-client.login("token");
+client.login(config.token);

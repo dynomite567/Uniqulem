@@ -1,0 +1,33 @@
+{
+  "name": "uniqulem",
+  "version": "1.1.4",
+  "description": "A very 'Unique' discord bot!",
+  "main": "node app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": "8.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dynomite567/Uniqulem.git"
+  },
+  "author": "Dynomite567",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dynomite567/Uniqulem/issues"
+  },
+  "homepage": "https://dynomite567.github.io/uniqulem",
+  "dependencies": {
+    "chalk": "^2.1.0",
+    "discord.js": "^11.2.1",
+    "express": "^4.16.1",
+    "moment": "^2.18.1",
+    "node-schedule": "^1.2.5",
+    "raven": "^2.2.1",
+    "return-deep-diff": "^0.2.7",
+    "superagent": "^3.6.2"
+  }
+}
