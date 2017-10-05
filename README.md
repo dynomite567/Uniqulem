@@ -22,6 +22,9 @@ Want to put the bot on your server? If so, that sounds great and awesome! To add
 
 *Note: Don't uncheck any boxes! If you do, you might miss out on future updates the bot has!*
 
+# Docker
+If you want, there is a docker auto app located [here.](https://hub.docker.com/r/dynomitecentral/uniqulem/)
+
 # Commands (so far)
 
 ;clear - Clear's the chat
