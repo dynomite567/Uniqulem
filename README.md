@@ -15,6 +15,8 @@ Node.js
 
 Discord.js
 
+Docker
+
 # Install
 Want to put the bot on your server? If so, that sounds great and awesome! To add the bot to your discord server, make sure you have manage server or administrator privileges to add it.
 
