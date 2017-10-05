@@ -18,7 +18,7 @@ Discord.js
 # Install
 Want to put the bot on your server? If so, that sounds great and awesome! To add the bot to your discord server, make sure you have manage server or administrator privileges to add it.
 
-**[Click here to add Uniqulem to your server!](https://discordapp.com/oauth2/authorize?client_id=307209446763921423&scope=bot&permissions=804388031)**
+**[Click here to add Uniqulem to your server!](https://discordapp.com/oauth2/authorize?client_id=307209446763921423&scope=bot&permissions=8)**
 
 *Note: Don't uncheck any boxes! If you do, you might miss out on future updates the bot has!*
 
@@ -33,9 +33,6 @@ Want to put the bot on your server? If so, that sounds great and awesome! To add
 ;info - Tells you all about the bot
 
 ;help - List's all the commands  
-
-# Stats
-Here are the bot's current stats. They are live and can be accessed in [here.](https://p.datadoghq.com/sb/8dda7a260-909542ed0d)
 
 # Trello
 I have made a trello for the bot! This is for seeing what I am working on currently but I might add more in the future! **[Click here to join!](https://trello.com/b/Bh6Bl6FT/uniqulem)**

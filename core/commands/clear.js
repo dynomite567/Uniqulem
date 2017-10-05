@@ -12,9 +12,9 @@ function hasRole(mem, role) {
 }
 
 exports.run = function(client, message, args) {
-	message.delete(1);
+  var args = message.content.split(/[ ]+/);
 	if (hasRole(message.member, "BotMod") || hasRole(message.member, "BotAdmin")) {
-     if (args.length >= 2) {
+     if (args.length >= 3) {
 		message.channel.send(new Discord.RichEmbed().setTitle("Error").setAuthor(message.author.username, message.author.avatarURL).setColor("#ff252a").setDescription("Number of messages are not defined or the number is too large! Usage: ``;clear (Number of messages to delete)``"));
       } else {
        var msg;

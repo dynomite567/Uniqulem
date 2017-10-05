@@ -14,15 +14,15 @@ function hasRole(mem, role) {
 exports.run = function(client, message, args) {
   message.delete(1);
   var args = message.content.split(/[ ]+/);
-  if (hasRole(message.member, "BotMod") || hasRole(message.member, "BotAdmin")) {
-    if(args.length === 1){
-      message.channel.send(new Discord.RichEmbed().setTitle("Error").setAuthor(message.author.username, message.author.avatarURL).setColor("#ff252a").setDescription("I need something to say! Usage: ``;say (message)``"));
+    if (hasRole(message.member, "BotMod") || hasRole(message.member, "BotAdmin")) {
+      if(args.length === 1){
+        message.channel.send(new Discord.RichEmbed().setTitle("Error").setAuthor(message.author.username, message.author.avatarURL).setColor("#ff252a").setDescription("I need something to say! Usage: ``;say (message)``"));
+      } else {
+        message.channel.send(args.join(" ").substring(5));
+      }
     } else {
-      message.channel.send(args.join(" ").substring(5));
-    }
-  } else {
-    message.channel.send(new Discord.RichEmbed().setTitle("Permision Denied").setAuthor(message.author.username, message.author.avatarURL).setColor("#ff252a").setDescription("You are not a **BotMod** or **BotAdmin**"));
-  }
+      message.channel.send(new Discord.RichEmbed().setTitle("Permision Denied").setAuthor(message.author.username, message.author.avatarURL).setColor("#ff252a").setDescription("You are not a **BotMod** or **BotAdmin**"));
+    } 
 };
 
 exports.conf = {
