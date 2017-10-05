@@ -25,6 +25,8 @@ Want to put the bot on your server? If so, that sounds great and awesome! To add
 # Docker
 If you want, there is a docker automated build located [here.](https://hub.docker.com/r/dynomitecentral/uniqulem/)
 
+Once you get it, make sure to configure config.json to include your bot token, as mine is censored. It is located in /core/config.json.
+
 # Commands (so far)
 
 ;clear - Clear's the chat
