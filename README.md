@@ -1,11 +1,11 @@
 # Uniqulem
 ![](http://i.imgur.com/Qo6BP2v.png)
 
-Uniqulem is a discord bot that is created to help you with your needs. The bot is coded from the Discord API and its pretty simple for now. The first version was just coded in just one day and its very stable.
+Uniqulem is a discord bot that is created to help you with your needs. The bot is coded from the Discord API and it's pretty simple for now. The first version was just coded in just one day and it's very stable.
 
 Uniqulem also has its own discord server: **[Join the server here](https://discord.gg/m4q24gX)**
 
-**Current Version: 1.1.3**
+**Current Version: 1.3.1**
 
 **[Changelog](https://github.com/dynomite567/Uniqulem/releases)**
 
@@ -31,7 +31,9 @@ Once you get it, make sure to configure config.json to include your bot token, a
 
 ;clear - Clear's the chat
 
-;server - Get a invite to the Uniqulem server
+;say - Says a message by you
+
+;server - Get an invite to the Uniqulem server
 
 ;hello - Makes the bot say hi
 
@@ -43,9 +45,9 @@ Once you get it, make sure to configure config.json to include your bot token, a
 I have made a trello for the bot! This is for seeing what I am working on currently but I might add more in the future! **[Click here to join!](https://trello.com/b/Bh6Bl6FT/uniqulem)**
 
 # Contribute to the Project
-This bot has a long ways to go, but a way that you can help is by contributing to this project. Whether its adding a new feature or rewriting the bot in a new coding language, you help out a whole lot to making this a really great and useful bot. All you have to do to contribute is to propose your files here!
+This bot has a long ways to go, but a way that you can help is by contributing to this project. Whether it's adding a new feature or rewriting the bot in a new coding language, you help out a whole lot to make this a really great and useful bot. All you have to do to contribute is to propose your files here!
 
 # Donate
-If you like the bot, and want to keep it running or let it have new features, a donation can help alot.
+If you like the bot and want to keep it running or let it have new features, a donation can help a lot.
 
 Patreon link: [patreon.com/uniqulem](https://www.patreon.com/uniqulem)
