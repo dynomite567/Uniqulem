@@ -3,7 +3,7 @@ node_js:
 - '8'
 before_install:
 - openssl aes-256-cbc -K $encrypted_d2204d4b3387_key -iv $encrypted_d2204d4b3387_iv
-  -in config.json.enc -out ~\/Desktop/Projects/Discord\ Bots/Uniqulem\ \(Git-hub\)/Travis-test/core/config.json
+  -in config.json.enc -out /Travis-test/core/config.json
   -d
 install:
 - npm install
