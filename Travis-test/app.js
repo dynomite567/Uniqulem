@@ -7,6 +7,7 @@ const http = require('http');
 const express = require('express');
 const moment = require('moment');
 const chalk = require('chalk');
+const delay = require('delay');
 const config = require('./core/config.json');
 const client = new Discord.Client();
 require('./core/util/eventLoader')(client);
@@ -68,5 +69,7 @@ client.elevation = message => {
 };
 
 client.login(config.token);
-
-process.exit();
+delay(200)
+  .then(() => {
+    process.exit();
+  });
