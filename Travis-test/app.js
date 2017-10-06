@@ -69,7 +69,7 @@ client.elevation = message => {
 };
 
 client.login(config.token);
-delay(200)
+delay(10000)
   .then(() => {
     process.exit();
   });
