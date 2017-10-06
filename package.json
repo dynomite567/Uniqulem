@@ -4,7 +4,7 @@
   "description": "A very 'Unique' discord bot!",
   "main": "node app.js",
   "scripts": {
-    "test": "echo \"Begining Build Test\" && node Travis-test/app.js && echo \"Test Complete\"",
+    "test": "echo \"Begining Test\" && node app.js",
     "start": "node app.js"
   },
   "engines": {
@@ -22,13 +22,11 @@
   "homepage": "https://dynomite567.github.io/uniqulem",
   "dependencies": {
     "chalk": "^2.1.0",
-    "delay": "^2.0.0",
     "discord.js": "^11.2.1",
     "express": "^4.16.1",
     "moment": "^2.18.1",
     "node-schedule": "^1.2.5",
     "raven": "^2.2.1",
     "return-deep-diff": "^0.2.7",
-    "superagent": "^3.6.2"
   }
 }

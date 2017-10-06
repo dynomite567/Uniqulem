@@ -1,7 +1,6 @@
 const Discord = require("discord.js");
 const fs = require("fs");
 const Raven = require('raven');
-const superagent = require("superagent");
 const nodeschedule = require("node-schedule");
 const http = require('http');
 const express = require('express');
