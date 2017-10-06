@@ -3,7 +3,6 @@
 
 [![Build Status](https://travis-ci.org/dynomite567/Uniqulem.svg?branch=master)](https://travis-ci.org/dynomite567/Uniqulem)
 [![Docker Automated build](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)](https://hub.docker.com/r/dynomitecentral/uniqulem/)
-[![Docker Build Status](https://img.shields.io/docker/build/jrottenberg/ffmpeg.svg)](https://hub.docker.com/r/dynomitecentral/uniqulem/)
 [![Dependencies](https://david-dm.org/dynomite567/Uniqulem.svg)](https://david-dm.org/dynomite567/Uniqulem)
 
 Uniqulem is a discord bot that is created to help you with your needs. The bot is coded from the Discord API and it's pretty simple for now. The first version was just coded in just one day and it's very stable.
