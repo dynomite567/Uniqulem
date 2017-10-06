@@ -4,7 +4,7 @@
   "description": "A very 'Unique' discord bot!",
   "main": "node app.js",
   "scripts": {
-    "test": "echo \"Begining Test\" && node app.js && node ./node_modules/npm-delay 30000",
+    "test": "echo \"Begining Build Test\" && node /Travis-test/app.js && node ./node_modules/npm-delay 10000 && echo \"Test Complete\"",
     "start": "node app.js"
   },
   "engines": {
