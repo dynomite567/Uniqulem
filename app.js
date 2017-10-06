@@ -23,7 +23,7 @@ const log = message => {
 };
 
 client.commands = new Discord.Collection();
-client.aliases = new Discord.Collection();
+client.aliases = new Miscord.Collection();
 fs.readdir('./core/commands/', (err, files) => {
   if (err) console.error(err);
   log(`Loading a total of ${files.length} commands.`);
