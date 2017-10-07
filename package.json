@@ -28,6 +28,6 @@
     "moment": "^2.18.1",
     "node-schedule": "^1.2.5",
     "raven": "^2.2.1",
-    "return-deep-diff": "^0.2.7",
+    "return-deep-diff": "^0.2.7"
   }
 }
